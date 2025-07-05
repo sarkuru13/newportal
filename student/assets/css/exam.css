@@ -1,0 +1,55 @@
+.exam-container {
+    max-width: 1400px;
+}
+
+.question-card {
+    scroll-margin-top: 20px;
+}
+
+#question-palette .palette-btn {
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Not Visited (Default) */
+#question-palette .not-visited {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #212529;
+}
+
+/* Visited */
+#question-palette .visited {
+    background-color: #6f42c1; /* Purple */
+    color: white;
+    border-color: #6f42c1;
+}
+
+/* Answered */
+#question-palette .answered {
+    background-color: #198754; /* Green */
+    color: white;
+    border-color: #198754;
+}
+
+.palette-legend {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.palette-legend.answered { background-color: #198754; }
+.palette-legend.visited { background-color: #6f42c1; }
+.palette-legend.not-visited { background-color: #f8f9fa; border: 1px solid #ccc; }
+
+/* Disable text selection during exam */
+.exam-in-progress {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

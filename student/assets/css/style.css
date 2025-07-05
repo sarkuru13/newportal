@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.exam-card {
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+.exam-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.exam-disabled .btn {
+    pointer-events: none;
+}
